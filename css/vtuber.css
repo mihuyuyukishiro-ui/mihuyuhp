@@ -81,7 +81,7 @@ h1 {
   border-radius: 24px;
   padding: 28px 20px;
   background:
-    radial-gradient(circle at top right, rgba(255,255,255,0.94), rgba(255,255,255,0.30) 34%, transparent 36%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.30) 34%, transparent 36%),
     linear-gradient(135deg, #dff1ff 0%, #bfe2ff 50%, #f8fcff 100%);
   border: 1px solid rgba(255, 255, 255, 0.65);
 }
@@ -96,7 +96,7 @@ h1 {
   place-items: center;
   padding: 24px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.66);
+  background: rgba(255, 255, 255, 0.66);
   border: 1px dashed rgba(74, 154, 230, 0.34);
   color: #5c89b0;
   font-weight: 700;
@@ -185,7 +185,7 @@ h1 {
 
 .contact-card {
   text-align: center;
-  background: linear-gradient(135deg, rgba(121,191,255,0.14), rgba(255,255,255,0.92));
+  background: linear-gradient(135deg, rgba(121, 191, 255, 0.14), rgba(255, 255, 255, 0.92));
 }
 
 .contact-actions {
@@ -193,6 +193,7 @@ h1 {
 }
 
 @media (max-width: 920px) {
+
   .hero-grid,
   .feature-grid,
   .profile-grid,
