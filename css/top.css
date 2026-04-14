@@ -1,0 +1,248 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 0 34px;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.hero::before {
+  width: 260px;
+  height: 260px;
+  right: -80px;
+  top: 10px;
+  background: rgba(121, 191, 255, 0.16);
+}
+
+.hero::after {
+  width: 180px;
+  height: 180px;
+  left: -40px;
+  bottom: 0;
+  background: rgba(185, 225, 255, 0.28);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-main,
+.hero-card,
+.section-card,
+.entry-card,
+.profile-card,
+.contact-card {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.hero-main {
+  padding: 42px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.lead {
+  margin: 0;
+  color: var(--sub);
+  font-size: 1.03rem;
+}
+
+.hero-card {
+  padding: 26px;
+}
+
+.hero-visual {
+  min-height: 320px;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.94), rgba(255,255,255,0.3) 32%, transparent 34%),
+    linear-gradient(135deg, #dff1ff 0%, #bcdfff 52%, #f5fbff 100%);
+  color: var(--main-deep);
+}
+
+.hero-visual .avatar-placeholder {
+  width: min(100%, 260px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.62);
+  border: 1px dashed rgba(74, 154, 230, 0.32);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  margin: 0 auto 18px;
+  color: #5b8bb7;
+  font-weight: 700;
+}
+
+.hero-visual strong {
+  display: block;
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.hero-visual p {
+  margin: 0;
+  color: #5e7c96;
+  font-size: 0.95rem;
+}
+
+.entry-grid,
+.activity-grid,
+.profile-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.entry-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.activity-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.entry-card,
+.section-card,
+.profile-card,
+.contact-card {
+  padding: 28px;
+}
+
+.entry-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.entry-card::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(121, 191, 255, 0.12);
+}
+
+.entry-card h3,
+.section-card h3,
+.profile-card h3,
+.contact-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.entry-card p,
+.section-card p,
+.profile-card p,
+.contact-card p {
+  margin: 0;
+  color: var(--sub);
+}
+
+.entry-card .entry-link {
+  display: inline-flex;
+  margin-top: 20px;
+  font-weight: 800;
+  color: var(--main-deep);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: #54728e;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.simple-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.simple-item {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  color: var(--sub);
+  font-size: 0.95rem;
+}
+
+.contact {
+  padding: 34px 0 78px;
+}
+
+.contact-card {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(121,191,255,0.14), rgba(255,255,255,0.92));
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .entry-grid,
+  .activity-grid,
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-main,
+  .hero-card,
+  .entry-card,
+  .section-card,
+  .profile-card,
+  .contact-card {
+    padding: 24px;
+  }
+
+  .hero {
+    padding-top: 44px;
+  }
+}

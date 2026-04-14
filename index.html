@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>雪白深冬 | EC-CUBE・WordPress・PHP開発</title>
-  <meta name="description" content="雪白深冬のポートフォリオサイトです。EC-CUBE、WordPress、PHPを中心としたWeb制作・カスタマイズ・フォーム開発を行っています。" />
+  <title>雪白深冬 | VTuber / Web Developer</title>
+  <meta name="description" content="雪白深冬の公式サイトです。VTuberとしての活動紹介と、EC-CUBE・WordPress・PHPを中心としたWeb開発のご案内を掲載しています。" />
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/top.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="logo">雪白深冬 / Web Developer</a>
-      <nav class="nav">
-        <a href="#services">サービス</a>
-        <a href="#plugins">プラグイン</a>
-        <a href="#about">プロフィール</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
+      <a href="#top" class="logo">雪白深冬 / Mihuyu</a>
+<nav class="nav">
+  <a href="#entry">入口</a>
+  <a href="#activity">活動紹介</a>
+  <a href="#profile">プロフィール</a>
+  <a href="vtuber.html">VTuberページ</a>
+  <a href="dev.html">技術ページ</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
     </div>
   </header>
 
@@ -24,196 +27,157 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-main">
-          <div class="eyebrow">EC-CUBE / WordPress / PHP</div>
-          <h1>Web制作とカスタマイズを、<br>丁寧に、実用的に。</h1>
+          <div class="eyebrow">VTuber / Web Developer</div>
+          <h1>雪白深冬の活動と、<br>ものづくりの入口へ。</h1>
           <p class="lead">
-            雪白深冬のポートフォリオサイトです。<br>
-            EC-CUBEのカスタマイズ、WordPress修正、PHPフォーム作成を中心に、
-            小規模な改修から継続的なご相談まで対応しています。
+            雪白深冬の公式サイトです。<br>
+            VTuberとしての活動紹介をメインに、
+            EC-CUBE・WordPress・PHPを中心としたWeb開発についてもご案内しています。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#services">サービスを見る</a>
-            <a class="btn btn-secondary" href="#contact">お問い合わせ</a>
+            <a class="btn btn-primary" href="#entry">活動を見る</a>
+            <a class="btn btn-secondary" href="dev.html">技術ページへ</a>
           </div>
         </div>
 
-        <aside class="hero-side">
-          <div class="profile-visual">
+        <aside class="hero-card">
+          <div class="hero-visual">
             <div>
+              <div class="avatar-placeholder">イラスト差し替え予定</div>
               <strong>雪白深冬</strong>
-              <span>Engineer × VTuber</span>
+              <p>
+                配信活動とWeb開発の両方に取り組んでいます。<br>
+                かわいさと実用性、どちらも大切にしたい人向けのトップページです。
+              </p>
             </div>
-          </div>
-          <div class="mini-list">
-            <div class="mini-item">EC-CUBEの表示調整・カスタマイズ対応</div>
-            <div class="mini-item">WordPressの不具合修正・軽微改修</div>
-            <div class="mini-item">お問い合わせフォームの新規作成</div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section>
+    <section id="entry">
       <div class="container">
         <div class="section-head">
-          <div class="section-label">Point</div>
-          <h2 class="section-title">こんな内容に対応しています</h2>
+          <div class="section-label">Entry</div>
+          <h2 class="section-title">目的に合わせてご覧ください</h2>
+          <p class="section-text">
+            活動を知りたい方向けの導線と、制作・開発のご相談向けの導線を分けています。
+          </p>
         </div>
-        <div class="cards">
-          <article class="card">
-            <h3>EC-CUBEカスタマイズ</h3>
+
+        <div class="entry-grid">
+          <article class="entry-card">
+            <h3>VTuberとしての活動を見る</h3>
             <p>
-              商品一覧・商品詳細・カート周りの表示調整や、プラグイン導入後の軽微な改修など、
-              実運用に合わせたカスタマイズに対応します。
+              配信活動、SNS、プロフィール、今後の活動情報など、
+              雪白深冬としての活動をまとめたページです。
+            </p>
+            <div class="tag-list">
+              <span class="tag">活動紹介</span>
+              <span class="tag">SNSリンク</span>
+              <span class="tag">プロフィール</span>
+            </div>
+<a class="entry-link" href="vtuber.html">VTuberページへ →</a>
+          </article>
+
+          <article class="entry-card">
+            <h3>Web制作・開発について見る</h3>
+            <p>
+              EC-CUBE、WordPress、PHPフォーム作成など、
+              技術者としての対応内容や制作実績を掲載しています。
+            </p>
+            <div class="tag-list">
+              <span class="tag">EC-CUBE</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">PHP</span>
+            </div>
+<a class="entry-link" href="dev.html">技術ページへ →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">Activity</div>
+          <h2 class="section-title">このサイトで分かること</h2>
+        </div>
+
+        <div class="activity-grid">
+          <article class="section-card">
+            <h3>活動紹介</h3>
+            <p>
+              雪白深冬としての活動方針や、どのような内容で発信しているかを掲載予定です。
             </p>
           </article>
-          <article class="card">
-            <h3>WordPress修正</h3>
+
+          <article class="section-card">
+            <h3>制作・開発</h3>
             <p>
-              表示崩れ、エラー、不具合調査、PHPバージョン変更後の修正など、
-              小さなお困りごとからご相談いただけます。
+              Web開発やカスタマイズ対応、販売プラグイン、ココナラでの出品内容などを紹介しています。
             </p>
           </article>
-          <article class="card">
-            <h3>フォーム作成</h3>
+
+          <article class="section-card">
+            <h3>お問い合わせ</h3>
             <p>
-              PHPを用いたお問い合わせフォーム、確認画面付きフォーム、
-              スパム対策を含むシンプルで使いやすい構成をご提案します。
+              活動関連のご連絡や、制作・開発のご相談など、内容に応じてお問い合わせいただけます。
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="services">
+    <section id="profile">
       <div class="container">
         <div class="section-head">
-          <div class="section-label">Service</div>
-          <h2 class="section-title">サービス</h2>
-        </div>
-        <div class="services">
-          <article class="service">
-            <h3>EC-CUBE関連</h3>
-            <p>EC-CUBEサイトの調整や機能追加など、実装ベースで対応します。</p>
-            <ul>
-              <li>商品一覧・商品詳細の表示カスタマイズ</li>
-              <li>カート・購入フロー周りの調整</li>
-              <li>既存プラグインの導入補助・調整</li>
-            </ul>
-          </article>
-          <article class="service">
-            <h3>WordPress関連</h3>
-            <p>テーマやプラグインに関わる軽微修正、不具合対応などに対応します。</p>
-            <ul>
-              <li>表示崩れ修正</li>
-              <li>プラグイン競合やエラー調査</li>
-              <li>簡単な機能追加・テンプレート修正</li>
-            </ul>
-          </article>
-          <article class="service">
-            <h3>フォーム・その他</h3>
-            <p>名刺代わりの簡単なWebページやフォーム作成などもご相談可能です。</p>
-            <ul>
-              <li>お問い合わせフォーム作成</li>
-              <li>確認画面・完了画面付き対応</li>
-              <li>静的サイトの軽微制作</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-<section id="plugins">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-label">Plugin</div>
-      <h2 class="section-title">プラグイン・制作実績</h2>
-    </div>
-
-    <div class="links">
-      <article class="panel">
-        <h3>EC-CUBEプラグイン</h3>
-        <p class="panel-text">
-          EC-CUBE向けに開発・販売しているプラグインです。
-          カテゴリページの訴求力向上に役立つ機能を提供しています。
-        </p>
-
-        <div class="item-list">
-          <a class="item-link" target="_blank" href="https://www.ec-cube.net/products/detail.php?product_id=3210">
-            <span class="item-title">カテゴリ画像・説明文設定プラグイン(4.2系/4.3系)</span>
-            <span class="item-sub">カテゴリページに画像や説明文を追加できるプラグインです。</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="panel">
-        <h3>ココナラ対応内容</h3>
-        <p class="panel-text">
-          ココナラでは、EC-CUBEの修正対応やフォーム作成など、
-          実務ベースのご相談を受け付けています。
-        </p>
-
-        <div class="item-list">
-          <a class="item-link" target="_blank" href="https://coconala.com/services/4171383">
-            <span class="item-title">EC-CUBEのカスタマイズ・修正対応します</span>
-            <span class="item-sub">表示調整、機能修正、軽微なカスタマイズなどに対応しています。</span>
-          </a>
-
-          <a class="item-link" target="_blank" href="https://coconala.com/services/4171254">
-            <span class="item-title">お問い合わせフォーム作成・修正します</span>
-            <span class="item-sub">PHPによるフォーム新規作成や既存フォームの修正に対応しています。</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="panel">
-        <h3>今後の掲載予定</h3>
-        <p>
-          サイト公開後、実績紹介、スクリーンショット、対応事例などを追加して、
-          より分かりやすい構成にしていく想定です。
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-    <section id="about">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-label">About</div>
+          <div class="section-label">Profile</div>
           <h2 class="section-title">プロフィール</h2>
         </div>
-        <div class="about-grid">
-          <article class="panel">
+
+        <div class="profile-grid">
+          <article class="profile-card">
             <h3>雪白深冬について</h3>
             <p>
-              普段はWeb関連の実装やカスタマイズを行いながら、VTuberとしても活動しています。<br>
-              技術面だけでなく、運用や見せ方も含めて相談しやすい制作を心がけています。
+              雪白深冬として配信活動を行いながら、Web制作やカスタマイズ対応も行っています。
+              一つの名前で、活動とものづくりの両方を育てていきたいと考えています。
             </p>
+            <div class="simple-list">
+              <div class="simple-item">VTuberとして活動中</div>
+              <div class="simple-item">Web制作・開発にも対応</div>
+              <div class="simple-item">EC-CUBE / WordPress / PHP</div>
+            </div>
           </article>
-          <article class="panel">
-            <h3>対応方針</h3>
+
+          <article class="profile-card">
+            <h3>このサイトの使い方</h3>
             <p>
-              小規模な修正でも相談しやすく、内容が分かりやすい形で進めることを大切にしています。<br>
-              まずは「これできるかな？」という段階からでもお気軽にご相談ください。
+              活動を知りたい方は VTuberページへ、制作・開発について知りたい方は技術ページへお進みください。
+              今後、活動実績や制作事例も順次追加していく予定です。
             </p>
+            <div class="simple-list">
+              <div class="simple-item">活動メインの入口ページ</div>
+              <div class="simple-item">技術ページへの導線あり</div>
+              <div class="simple-item">後から拡張しやすい構成</div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <div class="cta-box">
+        <div class="contact-card">
           <div class="section-label">Contact</div>
-          <h2 class="section-title">ご相談・お問い合わせ</h2>
+          <h2 class="section-title">ご連絡・ご相談</h2>
           <p>
-            フォーム作成、WordPress修正、EC-CUBEカスタマイズなどのご相談を受け付けています。<br>
-            お問い合わせ導線は、今後メールフォームや外部サービスに合わせて調整可能です。
+            活動に関するご連絡、またはWeb制作・開発のご相談を受け付けています。<br>
+            内容に応じて、VTuberページまたは技術ページから詳細をご確認ください。
           </p>
-          <div class="hero-actions" style="justify-content:center; margin-top: 24px;">
-            <a class="btn btn-primary" href="mailto:mihuyu.yukishiro@gmail.com">メールで問い合わせる</a>
-            <a class="btn btn-secondary" href="#top">TOPへ戻る</a>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:mihuyu.yukishiro@gmail.com">メールで連絡する</a>
+            <a class="btn btn-secondary" href="dev.html">技術ページを見る</a>
           </div>
         </div>
       </div>
